@@ -5,7 +5,7 @@ A simple responsive profile card built with HTML, CSS, and JavaScript.
 Responsive layout.
 Live current time.
 Social links (Twitter, Facebook, Instagram).
-Hobbies and dislikes displayed side by side.
+Hobbies and dislikes.
 
 # Deployment
 You can deploy this project easily on:
