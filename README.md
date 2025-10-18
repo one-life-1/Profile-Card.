@@ -1,4 +1,4 @@
-Profile Card
+#Profile Card
 A simple responsive profile card built with HTML, CSS, and JavaScript.
 
 Features
