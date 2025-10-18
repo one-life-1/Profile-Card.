@@ -144,8 +144,40 @@ padding: 0;
         padding-top: 10%;
     }
    
-  
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .clock {
+        width: 100%;
+        max-width: 300px;
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .date {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .clock ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        font-size: 24px;
+    }
+
+    .clock li {
+        display: inline-block;
+    }
 }
+
 
 
 
