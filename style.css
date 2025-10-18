@@ -6,9 +6,8 @@
 
 body {
     flex-wrap: wrap;
-    /* background-color: hsl(185, 75%, 39%); */
     justify-content: center;
-        background-image: url(EMPIRE/0objwK.jpg);
+        background-image: url(../EMPIRE/0objwK.jpg);
     margin-top: 100px;
     margin-left: 150px;
 }
@@ -267,6 +266,7 @@ ul {
     padding-top: 10px;
 
 } */
+
 
 
 
