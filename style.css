@@ -7,8 +7,8 @@
 body {
     flex-wrap: wrap;
     /* background-color: hsl(185, 75%, 39%); */
-    background: 0objwK.jpg;
     justify-content: center;
+        background-image: url(../0objwK.jpg);
     margin-top: 100px;
     margin-left: 150px;
 }
@@ -26,7 +26,7 @@ main {
 }
 
 section {
-    background-image: url(EMPIRE/OIP.webp);
+    background-image: url(../EMPIRE/OIP.webp);
     border-radius: 6%;
 }
 
@@ -267,4 +267,5 @@ ul {
     padding-top: 10px;
 
 } */
+
 
