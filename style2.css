@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    flex-wrap: wrap;
+    /* background-color: hsl(185, 75%, 39%); */
+    background-image: url(EMPIRE/0objwK.jpg);
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+main {
+    display: flex;
+    width: 80%;
+    position: absolute;
+}
+
+.left {
+    overflow: hidden;
+    height: 60vh;
+    width: 30%;
+}
+
+section {
+    background-image: url(EMPIRE/OIP.webp);
+    border-radius: 6%;
+}
+
+figure {
+    text-align: center;
+    border-radius: 6%;
+    margin-top: -115px;
+}
+
+.top {
+    background-image: url(EMPIRE/OIP2.webp);
+    height: 20vh;
+}
+
+.name {
+    text-align: center;
+    padding-top: 15%;
+}
+
+img {
+    width: 30%;
+    border-radius: 50%;
+    height: 20vh;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+article {
+    margin: auto;
+    width: 70%;
+    padding-left: 100px;
+    line-height: 25px;
+}
+
+ul {
+    padding-top: 10px;
+}
+
+span {
+    color: hsl(185, 75%, 39%);
+}
+
+span:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+h4 {
+    color: re
+}
+
+p {
+    padding-top: 10px;
+}
+
+ul {
+    padding-top: 10px;
+}
+footer {
+display: flex;
+justify-content: center;
+gap: 50px;
+}
+a img{
+    width: 2.3rem;
+    padding-bottom: 150%;
+}
+@media (max-width: 768px) {
+    *{
+margin: 0;
+padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 50px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        padding-right: 10%;
+    }
+
+    .left,
+    article {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    img {
+        width: 120px;
+        height: 100px;
+    }
+
+
+    article {
+        padding: 15px;
+    }
+
+    footer {
+        align-items: center;
+        gap: 10px;
+        padding-top: 10%;
+    }
+   
+  
+}
+
+
+
+
+
+
+
+
+
+/* article { padding: 60px; } .div { padding-left: 80px; } span { color: cornflowerblue; }
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+main {
+    display: flex;
+        width: 80%;
+
+}
+.left{
+overflow: hidden;
+}
+section {
+    width: 30%;
+background: white;
+border-radius: 6%;
+height: 60vh;
+}
+
+figure {
+            text-align: center;
+    border-radius: 6%;
+    margin-top: -100px;
+}
+.top{
+background-image: url(Copilot_20250920_183426.png);
+height: 20vh;
+}
+
+.name {
+    text-align: center;
+    padding-top: 15%;
+}
+
+img {
+    width: 25%;
+    border-radius: 60%;
+    height: 20vh;
+    
+}
+.footer {
+display: flex;
+justify-content: space-around;
+padding-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: red ;
+}
+.div{ 
+margin: auto;
+width: 70%;
+padding-left: 100px;
+line-height: 25px;
+}
+ul {
+    padding-top: 10px;
+} 
+span{
+    color: red;
+}
+span:hover{
+    text-decoration: underline;
+    color:hsl(185, 75%, 39%);
+} */
+/* 
+
+article {
+    padding:  60px;
+}
+
+.div {
+    padding-left: 80px;
+}
+
+
+span {
+    color: cornflowerblue;
+}
+
+h4 {
+    color: re
+}
+
+
+p {
+    padding-top: 10px;
+
+}
+
+ul {
+    padding-top: 10px;
+} */
