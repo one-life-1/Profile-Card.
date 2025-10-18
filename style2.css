@@ -7,7 +7,7 @@
 body {
     flex-wrap: wrap;
     /* background-color: hsl(185, 75%, 39%); */
-    background-image: url(EMPIRE/0objwK.jpg);
+    background: 0objwK.jpg;
     justify-content: center;
     margin-top: 100px;
     margin-left: 150px;
@@ -265,4 +265,5 @@ p {
 
 ul {
     padding-top: 10px;
+
 } */
