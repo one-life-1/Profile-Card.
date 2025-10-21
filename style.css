@@ -166,9 +166,8 @@ padding: 0;
         align-items: center;
     }
 header{
-                height: 90px;
-                padding: 30px;
-                line-height: 25px;
+                height: 12vh;
+                padding: 10px;
 }
 nav{
         flex-direction: column;
@@ -241,6 +240,7 @@ font-size: 30px;
     }
 
 }
+
 
 
 
