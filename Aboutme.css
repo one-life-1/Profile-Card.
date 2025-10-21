@@ -42,3 +42,52 @@ section h1{
     font-style: oblique;
     padding-left: 25px;
 }
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        background-size: contain;
+    }
+
+    .h1 {
+        width: 90%;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    span {
+        font-size: 36px;
+    }
+
+    section {
+        padding-top: 10px;
+    }
+
+    section h1 {
+        font-size: 20px;
+        padding-left: 10px;
+        text-align: center;
+    }
+}
+
+/* Tablets (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .h1 {
+        width: 50%;
+        font-size: 34px;
+    }
+
+    span {
+        font-size: 42px;
+    }
+
+    section h1 {
+        font-size: 22px;
+    }
+}
+
+/* Large Screens (Desktops, 1025px and up) */
+@media (min-width: 1025px) {
+    .h1 {
+        width: 15%;
+    }
+}
