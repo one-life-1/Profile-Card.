@@ -137,7 +137,9 @@ nav{
 
 }
 nav a{
-            color: brown;
+    color: hsl(185, 75%, 39%); 
+font-size: 30px;
+
 
 }
 
@@ -145,6 +147,9 @@ nav a:hover{
 text-decoration: underline;
 color: red;
 }
+
+
+
 
 @media (max-width: 768px) {
     *{
@@ -160,7 +165,20 @@ padding: 0;
         flex-direction: column;
         align-items: center;
     }
+header{
+                height: 90px;
+                padding: 30px;
+                line-height: 25px;
+}
+nav{
+        flex-direction: column;
 
+}
+nav a:hover{
+text-decoration: underline;
+color: red;
+font-size: 30px;
+}
     main {
         flex-direction: column;
         width: 100%;
@@ -223,6 +241,7 @@ padding: 0;
     }
 
 }
+
 
 
 
