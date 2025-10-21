@@ -127,6 +127,24 @@ a img{
     gap: 6px;
     justify-content: center;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+        width: 80%;
+        padding-left: 20px;
+        padding-bottom: 80px;
+        font-size: 20px;
+
+}
+nav a{
+            color: brown;
+
+}
+
+nav a:hover{
+text-decoration: underline;
+color: red;
+}
 
 @media (max-width: 768px) {
     *{
@@ -205,6 +223,7 @@ padding: 0;
     }
 
 }
+
 
 
 
