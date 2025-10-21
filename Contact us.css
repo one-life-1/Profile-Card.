@@ -69,5 +69,40 @@ textarea {
 color: red;
 
 }
+ @media (max-width: 600px) {
+    body {
+        background-color: papayawhip;
+        background-image: none;
+        width: 90%;
+        margin: 0 auto; 
+      
+    }
+
+    header {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    main {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        width: 100%;
+        padding: 40px 50px;
+        border-radius: 20px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    input {
+        max-width: 250px;
+        margin: 10px 0;
+    }
+    form{
+        padding-left: 30px;
+    }
+}
 
 
