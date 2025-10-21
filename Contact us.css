@@ -17,7 +17,7 @@ Body {                background-color: papayawhip;
         width: 150%;
         padding: 10px 20px;
         border-radius: 20px;
-        height: 60vh;
+        height: auto;
         margin: auto;
     }
 
@@ -115,6 +115,7 @@ color: red;
     }
 }
   
+
 
 
 
