@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    background-image: url(EMPIRE/OIP.webp);
+}
+
+ .h1{
+    width: 15%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+
+}
+
+span{
+    color: red;
+    font-size: 50px;
+    font-style: italic;
+
+}
+span:hover{
+    text-decoration: underline;
+}
+.A{
+    color: black;
+    text-decoration: none;
+        font-style: normal;
+
+}
+section{
+padding-top: 20px;
+
+}
+section h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-style: oblique;
+    padding-left: 25px;
+}

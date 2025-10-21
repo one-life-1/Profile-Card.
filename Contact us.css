@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body {
+        background-image: url(EMPIRE/OIPA.webp);
+    display: block;
+    margin: auto;
+    width: 15%;
+    padding: 150px 0;
+}
+header {
+    padding-left: 55px;
+}
+
+
+form {
+    padding-top: 30px;
+        width: 150%;
+}
+tr {
+    line-height: 25px;
+    font-size: 18px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+
+}
+
+label {
+    padding-left: 5px;
+}
+
+input {
+    width: 150%;
+    border-radius: 5px;
+    padding-left: 10px;
+        height: 25px;
+}
+
+
+textarea {
+    padding-left: 10px;
+    padding-right: 5%;
+}
+
+
+
+.textarea:hover {
+    min-height: 100px;
+
+    min-width: 100px;
+}
+
+
+.submit input {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    padding-left: 0 !important;
+
+}
+
+.submit td {
+    padding-left: 80px;
+    line-height: 50px;
+}
+.submit input:hover {
+color: red;
+}
