@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 
-Body {
-        background-image: url(OIPA.webp);
+Body {                background-color: papayawhip;
     display: block;
-    margin: auto;
+    margin: auto ;
     width: 15%;
     padding: 150px 0;
 }
+
+    main {
+       
+        background-color: red;
+        width: 150%;
+        padding: 10px 20px;
+        border-radius: 20px;
+        height: 60vh;
+        margin: auto;
+    }
+
 header {
     padding-left: 55px;
 }
@@ -105,6 +115,7 @@ color: red;
     }
 }
   
+
 
 
 
