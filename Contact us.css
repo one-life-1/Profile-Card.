@@ -9,6 +9,8 @@ Body {                background-color: papayawhip;
     margin: auto ;
     width: 15%;
     padding: 150px 0;
+              height: auto;
+
 }
 
     main {
@@ -17,7 +19,6 @@ Body {                background-color: papayawhip;
         width: 150%;
         padding: 10px 20px;
         border-radius: 20px;
-        height: auto;
         margin: auto;
     }
 
@@ -115,6 +116,7 @@ color: red;
     }
 }
   
+
 
 
 
