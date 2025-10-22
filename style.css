@@ -1,112 +1,109 @@
-* {
+
+
+
+
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    flex-wrap: wrap;
-    /* background-color: hsl(185, 75%, 39%); */
+body{
+    margin: 30px;
+     background-color: hsl(185, 75%, 39%); 
     background-image: url(EMPIRE/0objwK.jpg);
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 150px;
 }
+header{
+        margin-top: 80px;
 
-main {
+}
+ ul {
     display: flex;
-    width: 80%;
-    position: absolute;
-       border-radius: 20px;
+    justify-content: space-around;
+    gap: 30%;
+}
+.high li{
+    display: flex;
+}
+li a{
+    text-decoration: none;
+    color: red;
+}
+li a:hover{
+    color: hsl(185, 75%, 39%); 
+font-size: 20px;
+text-decoration: underline;
+}
+
+main{
+    margin: 50px;
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+height: auto;
+width: 80%;
+     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-.left {
-    overflow: hidden;
-    height: 60vh;
-    width: 30%;
-}
-
-section {
-    border-radius: 6%;
-    background: url(EMPIRE/OIP.webp);
-}
-
-figure {
-    text-align: center;
-    border-radius: 6%;
-    margin-top: -115px;
-}
-
-.top {
-    background-image: url(EMPIRE/OIP2.webp);
-    height: 20vh;
-}
-
-.name {
-    text-align: center;
-    padding-top: 15%;
 }
 
 img {
     width: 30%;
     border-radius: 50%;
-    height: 20vh;
+    height: 15vh;
+}
+
+section {
+    border-radius: 6%;
+    background: url(EMPIRE/OIP.webp);
+    margin: 20px;
+    overflow: hidden;
+ 
+  
 }
 
 
+.top {
+    background-image: url(EMPIRE/OIP2.webp);
+        height: 20vh;
 
-a {
-    text-decoration: none;
-    color: black;
+} 
 
+figure {
+    border-radius: 6%;
+    margin-top: -55px;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: red;
+.left{
+    text-align: center;
+}
+
+
+ a img {
+    width: 3rem;
 }
 
 article {
-    margin: auto;
-    width: 70%;
-    padding-left: 100px;
-    line-height: 25px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+       line-height: 20px;
+       
+
+}
+.right{
+      max-width: 650px; 
+        padding-left: 50px;
+        
+}
+.rightdown{
+    display: block;
 }
 
-ul {
-    padding-top: 10px;
-}
 
-span {
-    color: hsl(185, 75%, 39%);
-}
 
-span:hover {
-    text-decoration: underline;
-    color: red;
-}
 
-h4 {
-    color: re
-}
-
-p {
-    padding-top: 10px;
-}
-
-ul {
-    padding-top: 10px;
-}
-footer {
-display: flex;
-justify-content: center;
-gap: 50px;
-}
-a img{
-    width: 2.3rem;
-    padding-bottom: 150%;
-}
 .container{
     display: flex;
     justify-content: space-between;
@@ -129,87 +126,59 @@ a img{
     gap: 6px;
     justify-content: center;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-        width: 80%;
-        padding-left: 20px;
-        padding-bottom: 80px;
-        font-size: 20px;
-
-}
-nav a{
-    color: hsl(185, 75%, 39%); 
-font-size: 30px;
-
-
-}
-
-nav a:hover{
-text-decoration: underline;
-color: red;
-}
-
 
 
 
 @media (max-width: 768px) {
-    *{
-margin: 0;
-padding: 0;
-        box-sizing: border-box;
-    }
-    
     body {
-        flex-wrap: wrap;
-        margin: auto;
-        padding: 50px 20px;
-        flex-direction: column;
-        align-items: center;
+        margin: 10px;
     }
-header{
-                height: 12vh;
-                padding: 10px;
-}
-nav{
-        flex-direction: column;
+
+    header {
+        margin-top: 20px;
+    }
+
+
+
+li a{
+    text-decoration: none;
+    
+    
+} 
+li a:hover{
+    color: hsl(185, 75%, 39%); 
+font-size: 20px;
+text-decoration: underline;
 
 }
-nav a:hover{
-text-decoration: underline;
-color: red;
-font-size: 30px;
-}
+
+
     main {
         flex-direction: column;
-        width: 100%;
-        padding-right: 10%;
+         width: 100%;
+        margin: auto;
+        padding-top: 15px;
             box-shadow: none;
 
     }
 
-    .left,
-    article {
-        width: 100%;
-        max-width: 100%;
+    section {
+        width: 90%;
+        margin: auto;
     }
 
-    img {
+     img {
         width: 120px;
         height: 100px;
     }
 
-
-    article {
-        padding: 15px;
+    .right {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
     }
 
-    footer {
-        align-items: center;
-        gap: 10px;
-        padding-top: 10%;
-    }
-   
+  
       .container {
         flex-direction: column;
         align-items: center;
@@ -233,7 +202,7 @@ font-size: 30px;
         padding: 0;
         margin: 0;
         list-style: none;
-        display: flex;
+        display:block;
         justify-content: center;
         gap: 5px;
         font-size: 24px;
@@ -244,9 +213,6 @@ font-size: 30px;
     }
 
 }
-
-
-
 
 
 
