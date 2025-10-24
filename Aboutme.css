@@ -6,7 +6,8 @@
 
 body {
     margin: 20px;
-    background-image: url(EMPIRE/OIP.webp);
+    /* background-image: url(EMPIRE/OIP.webp); */
+     background: linear-gradient(135deg, #74b9ff, #a29bfe);
 }
 
  .h1{
@@ -91,3 +92,4 @@ section h1{
         width: 15%;
     }
 }
+
