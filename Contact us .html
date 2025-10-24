@@ -1,98 +1,145 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact US</title>
-    <link rel="stylesheet" href="Contact us.css">
-   
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="Contact us.css" />
 </head>
- <main >
-    <body   >
+
+<body>
+  <main>
     <header>
-            <h1>
-                Contact Us
-
-            </h1>
+      <h1>Contact Us</h1>
     </header>
-    <form action="">
 
-        <table>
-        
-            <tr>
+    <form id="contactForm" novalidate>
+      <table>
+        <!-- Full Name -->
+        <tr>
+          <td><label for="fullName">Full Name</label></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="fullName" name="fullName" required data-testid="test-contact-name"
+              aria-describedby="test-contact-error-name" />
+            <small id="test-contact-error-name" class="error"></small>
+          </td>
+        </tr>
 
-                <td> <label for="Fname">First Name</label>
-                </td>
+        <!-- Email -->
+        <tr>
+          <td><label for="email">Email</label></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="email" id="email" name="email" required placeholder="name@example.com"
+              data-testid="test-contact-email" aria-describedby="test-contact-error-email" />
+            <small id="test-contact-error-email" class="error"></small>
+          </td>
+        </tr>
 
-            <tr>
-                <td>
-                    <input type="text" name="Fname" id="" required>
+        <!-- Subject -->
+        <tr>
+          <td><label for="subject">Subject</label></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="subject" name="subject" required placeholder="Subject is required"
+              data-testid="test-contact-subject" aria-describedby="test-contact-error-subject" />
+            <small id="test-contact-error-subject" class="error"></small>
+          </td>
+        </tr>
 
-                </td>
-            </tr>
-            <tr>
+        <!-- Message -->
+        <tr>
+          <td><label for="message">Message</label></td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="message" name="message" class="textarea" required minlength="10"
+              placeholder="Message must be at least 10 characters"
+              data-testid="test-contact-message" aria-describedby="test-contact-error-message"></textarea>
+            <small id="test-contact-error-message" class="error"></small>
+          </td>
+        </tr>
 
-                <td> <label for="Lname">Last Name</label>
-                </td>
+        <!-- Submit Button -->
+        <tr class="submit">
+          <td>
+            <button type="submit" data-testid="test-contact-submit">Submit</button>
+          </td>
+        </tr>
+      </table>
 
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" name="Lname" id="" required>
-
-                </td>
-            </tr>
-            <tr>
-
-                <td> <label for="email">Email</label>
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <input type="email" name="email" id="" required placeholder="name@email.com">
-
-                </td>
-            </tr>
-            <tr>
-
-                <td> <label for="Subject">Subject</label>
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" name="Subject" id="" required placeholder="Subject is required">
-
-                </td>
-            </tr>
-            <tr>
-
-                <td> <label for="Message">Message</label>
-                </td>
-
-            </tr>
-            <tr >
-                <td>
-                    <textarea name="text"  class="textarea" placeholder="Message is required" required></textarea>
-                </td>
-            </tr>
-            <tr class="submit">
-                <td>
-                    <input type="submit" value="submit">
-                </td>
-            </tr>
-        </table>
-
-
-
-
+      <!-- Success Message -->
+      <p id="successMessage" class="success" data-testid="test-contact-success" style="display:none;">
+        ✅ Your message has been successfully sent!
+      </p>
     </form>
+  </main>
 
- </main >
+  <script>
+    const form = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Clear old errors
+      document.querySelectorAll(".error").forEach(el => el.textContent = "");
+
+      let isValid = true;
+
+      const name = document.getElementById("fullName");
+      const email = document.getElementById("email");
+      const subject = document.getElementById("subject");
+      const message = document.getElementById("message");
+
+      // Validate Name
+      if (name.value.trim() === "") {
+        document.getElementById("test-contact-error-name").textContent = "Full name is required.";
+        isValid = false;
+      }
+
+      // Validate Email
+      const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+      if (email.value.trim() === "") {
+        document.getElementById("test-contact-error-email").textContent = "Email is required.";
+        isValid = false;
+      } else if (!emailPattern.test(email.value.trim())) {
+        document.getElementById("test-contact-error-email").textContent = "Enter a valid email address.";
+        isValid = false;
+      }
+
+      // Validate Subject
+      if (subject.value.trim() === "") {
+        document.getElementById("test-contact-error-subject").textContent = "Subject is required.";
+        isValid = false;
+      }
+
+      // Validate Message
+      if (message.value.trim().length < 10) {
+        document.getElementById("test-contact-error-message").textContent = "Message must be at least 10 characters.";
+        isValid = false;
+      }
+
+      if (isValid) {
+        successMessage.style.display = "block";
+        form.reset();
+        setTimeout(() => {
+          successMessage.style.display = "none";
+        }, 4000);
+      } else {
+        successMessage.style.display = "none";
+      }
+    });
+  </script>
 </body>
-
 </html>
 
 
@@ -104,3 +151,4 @@
 
 
 
+ -->
