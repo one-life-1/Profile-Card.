@@ -31,7 +31,7 @@
           </td>
         </tr>
 
-        <!-- Email -->
+    
         <tr>
           <td><label for="email">Email</label></td>
         </tr>
@@ -43,7 +43,7 @@
           </td>
         </tr>
 
-        <!-- Subject -->
+    
         <tr>
           <td><label for="subject">Subject</label></td>
         </tr>
@@ -55,7 +55,7 @@
           </td>
         </tr>
 
-        <!-- Message -->
+ 
         <tr>
           <td><label for="message">Message</label></td>
         </tr>
@@ -68,7 +68,7 @@
           </td>
         </tr>
 
-        <!-- Submit Button -->
+     
         <tr class="submit">
           <td>
             <button type="submit" data-testid="test-contact-submit">Submit</button>
@@ -76,7 +76,7 @@
         </tr>
       </table>
 
-      <!-- Success Message -->
+    
       <p id="successMessage" class="success" data-testid="test-contact-success" style="display:none;">
         ✅ Your message has been successfully sent!
       </p>
@@ -90,7 +90,7 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      // Clear old errors
+    
       document.querySelectorAll(".error").forEach(el => el.textContent = "");
 
       let isValid = true;
@@ -100,13 +100,13 @@
       const subject = document.getElementById("subject");
       const message = document.getElementById("message");
 
-      // Validate Name
+   
       if (name.value.trim() === "") {
         document.getElementById("test-contact-error-name").textContent = "Full name is required.";
         isValid = false;
       }
 
-      // Validate Email
+ 
       const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
       if (email.value.trim() === "") {
         document.getElementById("test-contact-error-email").textContent = "Email is required.";
@@ -116,13 +116,13 @@
         isValid = false;
       }
 
-      // Validate Subject
+   
       if (subject.value.trim() === "") {
         document.getElementById("test-contact-error-subject").textContent = "Subject is required.";
         isValid = false;
       }
 
-      // Validate Message
+
       if (message.value.trim().length < 10) {
         document.getElementById("test-contact-error-message").textContent = "Message must be at least 10 characters.";
         isValid = false;
@@ -141,6 +141,7 @@
   </script>
 </body>
 </html>
+
 
 
 
